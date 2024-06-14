@@ -1,0 +1,16 @@
+.title{
+    margin: 20px;
+    h2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    button{
+        font-size: 20px;
+        font-weight: bold;
+        border-bottom: 2px solid $border-home-title-nav;
+        margin: 0 5px;
+        &:hover{
+            opacity: .4;
+        }
+    }
+}

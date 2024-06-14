@@ -1,0 +1,31 @@
+<div class="wrapListMembresia">
+    <div class="title">
+        <h2>MEMBRESIA</h2>
+    </div>
+    <div class="contentTable">
+        <div class="table">
+            <table>
+                <thead>
+                    <tr class="headTable">
+                        <th>ID</th>
+                        <th>BENEFICIARIOS</th>
+                        <th>CUOTA</th>
+                        <th>ESTADO</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let det of dataSuscripcion.suscriptions">
+                        <td><p>{{ det.id }}</p></td>
+                        <td><p>{{ det.beneficiaries }}</p></td>
+                        <td><p>{{ det.quotaDescription }}</p></td>
+                        <td><p>{{ det.statusName }}</p></td>
+                        <td>
+                            <button class="btn btn-primary" [routerLink]="['/home/cronograma', det.id]">Cronograma</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

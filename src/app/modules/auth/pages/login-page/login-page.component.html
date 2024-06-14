@@ -1,0 +1,20 @@
+<div class="wrapLogin">
+    <div class="contentLogin">
+        <h1>BIENVENIDO</h1>
+        <div class="contentForm">
+            <div class="contentInputLogin">
+                <p>USUARIO</p>
+                <input type="text" class="input" autocomplete="off"
+                [(ngModel)]="dataLogin.username" name="username">
+            </div>
+            <div class="contentInputLogin">
+                <p>CONTRASEÑA</p>
+                <input type="password" class="input" autocomplete="off"
+                [(ngModel)]="dataLogin.password" name="password">
+            </div>
+            <div class="contentButtonLogin">
+                <button (click)="ingreso()">INGRESAR</button>
+            </div>
+        </div>
+    </div>
+</div>

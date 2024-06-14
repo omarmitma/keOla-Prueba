@@ -1,0 +1,45 @@
+<div class="wrapCronograma">
+    <div class="title">
+        <h2><button [routerLink]="['/home']">MEMBRESIA</button> / CRONOGRAMA</h2>
+    </div>
+    
+    <div class="contentTable">
+        <div class="table">
+            <table>
+                <thead>
+                    <tr class="headTable">
+                        <th>ID</th>
+                        <th>CAPITAL BALANCE</th>
+                        <th>AMORTIZACION</th>
+                        <th>CUOTA</th>
+                        <th>CUOTA DESC</th>
+                        <th>FECHA DE PAGO</th>
+                        <th>PAGO TOTAL</th>
+                        <th>ESTADO</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let det of dataCronograma">
+                        <td><p>{{ det.idPayment }}</p></td>
+                        <td><p>{{ det.capitalBalance }}</p></td>
+                        <td><p>{{ det.amortization }}</p></td>
+                        <td><p>{{ det.quote }}</p></td>
+                        <td><p>{{ det.quoteDescription }}</p></td>
+                        <td><p>{{ det.payDate | date: 'dd-MM-yyyy'}}</p></td>
+                        <td><p>{{ det.totalPay }}</p></td>
+                        <td><p>{{ det.verifText }}</p></td>
+                      
+                        <td>
+                            <button class="btn btn-primary" [routerLink]="['/home/cronograma/voucher',idMembresia,det.idPayment]">Vouchers</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-primary">Validar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

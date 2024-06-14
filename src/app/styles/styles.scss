@@ -1,0 +1,37 @@
+/* 0-base */
+@import '0-base/base-dir';
+
+/* 3-helpers */
+@import '3-helpers/helpers-dir';
+
+/* 2-modules */
+@import '2-modules/modules-dir';
+
+/* 1-pages */
+@import '1-pages/pages-dir';
+
+
+:root {
+  --transform-text: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a,button{
+  text-decoration: none;
+  border: none;
+  transition: .6s all;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+input{
+  outline: none;
+  background-color: transparent;
+  border: none;
+}

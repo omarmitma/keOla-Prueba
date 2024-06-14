@@ -1,0 +1,77 @@
+.wrapLogin{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../../../assets/images/bgLoginMobile.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contentLogin{
+    width: 90%;
+    margin: 30px auto;
+    backdrop-filter: blur(2px);
+    background-color: rgba($color: $bg-login-formulario, $alpha: 0.4);
+    padding: 30px;
+    h1{
+        font-size: 35px;
+        text-align: center;
+        color: $white;
+        margin-bottom: 30px;
+    }
+}
+.contentForm{
+
+}
+.contentInputLogin{
+    margin-top: 40px;
+    p{
+        color: $font-color-login-input-title;
+        font-size: 15px;
+    }
+    input{
+        font-size: 14px;
+        width: 100%;
+        margin-top: 5px;
+        color: $font-color-login-input;
+        padding: 10px 5px;
+        border-bottom: 1px solid $border-login-input;
+    }
+}
+.contentButtonLogin{
+    margin: 40px 0;
+    button{
+        width: 100%;
+        padding: 10px 0;
+        background-color: $bg-login-button;
+        border-radius: 4px;
+        color: $font-color-login-button;
+        font-size: 18px;
+    }
+    button:hover{
+        background-color: rgba($bg-login-button, $alpha: 0.8);
+    }
+}
+@media (min-width:470px){
+    .contentLogin{
+        width: 400px;
+        h1{
+            font-size: 35px;
+            margin-bottom: 60px;
+        }
+    }
+    .contentButtonLogin{
+        margin: 40px 0;
+        button{
+            width: 100%;
+            padding: 15px 0;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width:910px){
+    .wrapLogin{
+        background-image: url('../../../../assets/images/bgLoginDesktop.jpg');
+    }
+}

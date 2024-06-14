@@ -1,0 +1,43 @@
+.contentTable{
+    width: 90%;
+    margin:20px auto;
+    .table{
+        width: 100%;
+        overflow: auto;
+        background-color: $white;
+        table{
+            min-width: max-content;
+            width: 100%;
+            border-collapse: collapse;
+            background-color: $white;
+            thead {
+                tr {
+                    th {
+                        background-color: $background-header-table;
+                        position: sticky;
+                        top: 0;
+                        padding: 10px;
+                        color: $white;
+                        text-align: left;
+                        font-size: 15px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                min-height: 35px;
+                background-color: $white;
+                transition: 0.6s background-color;
+                    td {
+                        padding: 10px;
+                    }
+                }
+
+                tr:nth-child(even) {
+                    background-color: $background-table-even;
+                }
+                
+            }
+        }
+    }
+}
