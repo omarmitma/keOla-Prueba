@@ -50,13 +50,15 @@ export class Alert {
             title: title,
             text: text,
             icon: 'question',
+            
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'SI',
-            cancelButtonText: 'NO',
-            showCancelButton: true,
-            showCloseButton: true
-            
+            confirmButtonText: 'Aceptar',
+            denyButtonText: 'Rechazar',
+            showCancelButton: false,
+            showCloseButton: true,
+            showDenyButton: true,
+            showConfirmButton: true
         });
     }
 
@@ -69,6 +71,18 @@ export class Alert {
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Aceptar'
+        });
+    }
+
+    alertData(title:string){
+        return Swal.fire({
+            title: title,
+            input: "text",
+            inputAttributes: {
+              autocapitalize: "off"
+            },
+            showCancelButton: true,
+            confirmButtonText: "Validar"
         });
     }
 

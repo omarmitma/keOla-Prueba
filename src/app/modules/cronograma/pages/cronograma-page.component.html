@@ -35,7 +35,7 @@
                             <button class="btn btn-primary" [routerLink]="['/home/cronograma/voucher',idMembresia,det.idPayment]">Vouchers</button>
                         </td>
                         <td>
-                            <button class="btn btn-primary">Validar</button>
+                            <button class="btn btn-primary" (click)="validatePayment(det)">Validar</button>
                         </td>
                     </tr>
                 </tbody>

@@ -12,6 +12,7 @@ export class ValidatePaymentService {
   constructor(private httpClient: HttpClient) {}
   
   public validatePayment(data:ValidatePayment): Observable<any>{
+    console.log(data);
     return this.httpClient
     .post<any>(this.url, data);
   }
